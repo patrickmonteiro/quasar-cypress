@@ -1,5 +1,14 @@
 /// <reference types="Cypress" />
 
+// GUARDA E RE-SETA O LOCALSTORAGE A CADA ITERAÇÃO DE TESTE.
+// beforeEach(() => {
+//   cy.restoreLocalStorage();
+// });
+
+// afterEach(() => {
+//   cy.saveLocalStorage();
+// });
+
 context('Cadastro de Usuário', () => {
   // beforeEach(() => {
   //   cy.visit('/usuario')
