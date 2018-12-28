@@ -23,7 +23,7 @@ context('Cadastro de Usuário', () => {
     cy.get('input[data-cy="endereco"]').focus().type('Rua Duque de Caxias 555')
   })
 
-  it('Clica no Botão Confirmar', () => {
+  it('Seleciono o Gênero', () => {
     cy.get('[data-cy="genero"]').click()
     cy.wait(500)
     cy.get('div.q-item-division').contains('Masculino').click()
