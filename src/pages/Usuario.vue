@@ -1,6 +1,6 @@
 <template>
-  <q-page class="container" padding>
-    <h2>Usuario</h2>
+  <q-page class="container q-pa-lg" >
+    <div class="q-display-2 q-pb-lg">Usuário</div>
     <div class="row gutter-y-sm">
 
       <div class="col-12">
@@ -27,8 +27,24 @@
       </div>
 
       <div class="col-12">
+        <p class="caption">Idioma:</p>
+        <q-btn-toggle
+          v-model="idioma"
+          toggle-color="primary"
+          data-cy="idioma"
+          push
+          color="grey-3"
+          text-color="dark"
+          :options="[
+            {label: 'Português', value: 'Português'},
+            {label: 'Inglês', value: 'Inglês'}
+          ]"
+        />
+      </div>
+
+      <div class="col-12">
         <q-btn label="Confirmar" color="primary" size="lg"
-          data-cy="salvarUsuario" class="float-right" @click="confirmarCadastro()" />
+          data-cy="salvarUsuario" class="float-right" push @click="confirmarCadastro()" />
       </div>
     </div>
     <div class="row" v-if="msg" data-cy="msg-success">
@@ -45,6 +61,9 @@
       <div class="col-12">
         Gênero: {{ selectGenero }}
       </div>
+      <div class="col-12">
+        Idioma: {{ idioma }}
+      </div>
     </div>
   </q-page>
 </template>
@@ -58,6 +77,7 @@ export default {
       sobrenome: '',
       endereco: '',
       msg: false,
+      idioma: '',
       selectOptions: [
         {
           label: 'Masculino',

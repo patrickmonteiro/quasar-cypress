@@ -30,6 +30,13 @@ context('Cadastro de Usuário', () => {
     // cy.get('div[link=true]').eq(1).click()
   })
 
+  it('Seleciono o Idioma', () => {
+    cy.get('div[data-cy="idioma"] button').contains('Português').click()
+    cy.wait(1000)
+    // cy.get('div.q-item-division').contains('Masculino').click()
+    // cy.get('div[link=true]').eq(1).click()
+  })
+
   it('Clica no Botão Confirmar', () => {
     cy.get('button[data-cy="salvarUsuario"]').click()
   })
