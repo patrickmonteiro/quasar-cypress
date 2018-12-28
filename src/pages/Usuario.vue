@@ -16,11 +16,22 @@
       </div>
 
       <div class="col-12">
+         <q-select
+            v-model="selectGenero"
+            float-label="Gênero"
+            :options="selectOptions"
+            data-cy="genero"
+            inverted-light
+            color="grey-3"
+          />
+      </div>
+
+      <div class="col-12">
         <q-btn label="Confirmar" color="primary" size="lg"
           data-cy="salvarUsuario" class="float-right" @click="confirmarCadastro()" />
       </div>
     </div>
-    <div class="row" v-if="msg">
+    <div class="row" v-if="msg" data-cy="msg-success">
       <span class="q-title" data-cy="alert-sucesso">Usuário cadastrado com sucesso</span>
       <div class="col-12">
         Nome: {{ nome }}
@@ -30,6 +41,9 @@
       </div>
       <div class="col-12">
         Endereco: {{ endereco }}
+      </div>
+      <div class="col-12">
+        Gênero: {{ selectGenero }}
       </div>
     </div>
   </q-page>
@@ -43,7 +57,18 @@ export default {
       nome: '',
       sobrenome: '',
       endereco: '',
-      msg: false
+      msg: false,
+      selectOptions: [
+        {
+          label: 'Masculino',
+          value: 'masculino'
+        },
+        {
+          label: 'Feminino',
+          value: 'feminino'
+        }
+      ],
+      selectGenero: ''
     }
   },
   methods: {

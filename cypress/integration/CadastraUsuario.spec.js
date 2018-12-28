@@ -24,11 +24,20 @@ context('Cadastro de Usuário', () => {
   })
 
   it('Clica no Botão Confirmar', () => {
+    cy.get('[data-cy="genero"]').click()
+    cy.wait(500)
+    cy.get('div.q-item-division').contains('Masculino').click()
+    // cy.get('div[link=true]').eq(1).click()
+  })
+
+  it('Clica no Botão Confirmar', () => {
     cy.get('button[data-cy="salvarUsuario"]').click()
   })
 
   it('Aguardo 1 Segundo', () => {
-    cy.wait(1000)
+    cy.wait(500)
+    cy.get('[data-cy="msg-success"]').scrollIntoView()
+    cy.wait(500)
   })
 
   it('Verifico mensagem de confirmação', () => {
