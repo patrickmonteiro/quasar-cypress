@@ -20,14 +20,9 @@ $ cd quasar-cypress
 $ npm install 
 ```
 
-Ao terminar a instalação rode o comando para iniciar o projeto:
-```sh
-$ quasar dev
-```
-
-Com o projeto rodando, abra outro terminal de sua preferência e rode o comando para inicializar o Cypress:
+Ao terminar a instalação rode o comando para iniciar o projeto no modo de desenvolvimento do quasar e abrir a interface do cypress:
 ```sh
 $ npm run test
 ```
 
-Com o Cypress aberto, clique no teste de integração **CadastraUsuario.spec.js** e o teste será iniciado.
+Com o Cypress aberto e a aplicação rodando em localhost, clique no teste de integração **CadastraUsuario.spec.js** e o teste será iniciado.
