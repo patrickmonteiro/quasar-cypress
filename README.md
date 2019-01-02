@@ -20,9 +20,26 @@ $ cd quasar-cypress
 $ npm install 
 ```
 
-Ao terminar a instalação rode o comando para iniciar o projeto no modo de desenvolvimento do quasar e abrir a interface do cypress:
+Ao terminar a instalação rode o comando para iniciar o projeto no modo de desenvolvimento do quasar:
+```sh
+$ quasar dev
+```
+
+Quando a aplicação estiver rodando em localhost:8080, rode o comando para executar o teste com cypress:
 ```sh
 $ npm run test
 ```
+O cypress irá gerar um vídeo de evidência dentro o caminho **quasar-cipress/cypress/video**.
+Além disso está instalado o [mochawesome](https://www.npmjs.com/package/mochawesome), que gera evidências html dentro do caminho **quasar-cipress/mochawesome-report**, basta abrir o arquivo .html no navegador para visualizar o resultado do teste executado.
 
-Com o Cypress aberto e a aplicação rodando em localhost, clique no teste de integração **CadastraUsuario.spec.js** e o teste será iniciado.
+## Interface Cypress
+
+[![N|Solid](https://www.cypress.io/img/cypress-test-runner-gui-in-browser.201beeab.png)]() 
+
+Para utlizar a interface do cypress, basta rodar o comando:
+
+```sh
+$ npm run test:e2e
+```
+
+Com a interface do Cypress aberta e a aplicação rodando em localhost, clique no teste de integração **CadastraUsuario.spec.js** e o teste será iniciado.
