@@ -29,7 +29,7 @@
     "eslint-plugin-vue": "^4.3.0",
     "mocha": "^5.2.0",
     "mochawesome": "^3.1.1",
-    "quasar-cli": "^0.17.0",
+    "quasar-cli": "^0.17.23",
     "strip-ansi": "=3.0.1"
   },
   "engines": {
