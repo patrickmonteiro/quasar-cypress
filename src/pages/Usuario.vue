@@ -12,6 +12,10 @@
       </div>
 
       <div class="col-12">
+        <q-input v-model="cpf" float-label="CPF" data-cy="cpf" inverted-light color="grey-3" v-mask="'###.###.###-##'"  />
+      </div>
+
+      <div class="col-12">
         <q-input v-model="endereco" float-label="Endereço" inverted-light data-cy="endereco" color="grey-3" />
       </div>
 
@@ -75,6 +79,7 @@ export default {
     return {
       nome: '',
       sobrenome: '',
+      cpf: '',
       endereco: '',
       msg: false,
       idioma: '',

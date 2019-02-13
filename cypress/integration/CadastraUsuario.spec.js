@@ -24,8 +24,12 @@ context('Cadastro de Usuário', () => {
     cy.get('input[data-cy="nome"]').focus().type('Patrick')
   })
 
-  it('Preenche Campo Sobre Nome',  () => {
+  it('Preenche Campo Sobrenome',  () => {
     cy.get('input[data-cy="sobrenome"]').focus().type('Monteiro')
+  })
+
+  it('Preenche Campo CPF',  () => {
+    cy.get('input[data-cy="cpf"]').focus().type('00700800910')
   })
 
   it('Preenche Campo Endereço', () => {
