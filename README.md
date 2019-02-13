@@ -2,6 +2,8 @@
 
 > Exemplo de projeto com Quasar Framework, e testes e2e com Cypress.
 
+Você pode acessar a Demo online: [http://quasarcypress.surge.sh/#/usuario](http://quasarcypress.surge.sh/#/usuario)
+
 | Recurso | Versão |
 | ------ | ------ |
 | Sistema Operacional |  Windows_NT(10.0.17134) - win32/x64 |
