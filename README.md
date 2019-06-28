@@ -34,12 +34,12 @@ $ npm run test
 O cypress irá gerar um vídeo de evidência dentro o caminho **quasar-cipress/cypress/video**.
 Além disso está instalado o [mochawesome](https://www.npmjs.com/package/mochawesome), que gera evidências html dentro do caminho **quasar-cipress/mochawesome-report**, basta abrir o arquivo .html no navegador para visualizar o resultado do teste executado.
 
-[![N|Solid](https://github.com/patrickmonteiro/quasar-cypress/blob/master/src/statics/cypress-mocha-awesome.PNG?raw=true)]() 
+[![N|Solid](https://github.com/patrickmonteiro/quasar-cypress/blob/master/src/statics/cypress-mocha-awesome.png?raw=true)]() 
 
 
 ## Interface Cypress
 
-[![N|Solid](https://www.cypress.io/img/cypress-test-runner-gui-in-browser.201beeab.png)]() 
+[![N|Solid](https://github.com/patrickmonteiro/quasar-cypress/blob/master/src/statics/interface-cypress.png?raw=true)]() 
 
 Para utlizar a interface do cypress, basta rodar o comando:
 
