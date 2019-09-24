@@ -7,10 +7,10 @@ Você pode acessar a Demo online: [http://quasarcypress.surge.sh/#/usuario](http
 | Recurso | Versão |
 | ------ | ------ |
 | Sistema Operacional |  Windows_NT(10.0.17134) - win32/x64 |
-| NodeJs | 8.11.3 |
-| quasar-cli | 0.17.22 |
-| quasar-framework | 0.22.18 |
-| NPM | 5.6.0 |
+| NodeJs | 10.16.2 |
+| quasar-cli | 0.17.26 |
+| quasar-framework | 0.17.20 |
+| NPM | 6.10.3 |
 
 # Instalação
 
